@@ -10,6 +10,7 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="css/choices.min.css">
    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -35,7 +36,7 @@
                      </div>
                      <div class="contacts__block">
                         <div class="contacts__phone-box">
-                           <a class="contacts__phone" href="tel:78003202020">
+                           <a class="contacts__phone" href="tel:78003202020" data-da=".menu__list-mobile,767,last">
                               <svg class="contacts__phone-img" width="25" height="25" viewBox="0 0 25 25" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                  <g clip-path="url(#clip0_1456_18)">
@@ -51,7 +52,7 @@
                               </svg>
                               +7 (800) 320 20 20
                            </a>
-                           <p class="phone__time">
+                           <p class="phone__time" data-da=".menu__list-mobile,767,last">
                               с 09:00 до 18:00 (по московскому времени)
                            </p>
                            <a class="contacts__phone-mobile" href="tel:+78003202020">
@@ -71,7 +72,7 @@
                               </svg>
                            </a>
                         </div>
-                        <div class="contacts__social-box">
+                        <div class="contacts__social-box" data-da=".phone__time,390,last">
                            <ul class="contacts__social-list">
                               <li class="contacts__social-item">
                                  <a class="contacts__social-link" href="#">
@@ -106,7 +107,7 @@
                            </ul>
                         </div>
                         <div class="contacts__tender-box">
-                           <button class="tender__btn" data-popup="#tender">
+                           <button class="tender__btn" data-popup="#tender" data-da=".menu__list-mobile,620,last">
                               Пригласить на тендер
                               <svg class="tender__btn-img" width="10" height="10" viewBox="0 0 10 10" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -131,9 +132,49 @@
                         <li class="menu__list-item">
                            <a class="menu__list-link" href="#company">о Компании</a>
                         </li>
-                        <li class="menu__list-item">
+                        <!--===== sub-menu =====-->
+                        <li class="menu__list-item menu__list-item-services">
                            <a class="menu__list-link" href="#services">Услуги</a>
+                           <svg class="menu__arrow arrow" width="12" height="8" viewBox="0 0 12 8" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                 d="M5.55868 6.79219L5.96577 7.19927L11.4658 1.69922L10.6516 0.885045L5.93731 5.59938L1.05227 0.714331L0.266548 1.50005L5.55868 6.79219Z"
+                                 fill="#232324" />
+                           </svg>
+                           <ul class="sub-menu__list">
+                              <li class="box-shadow-item">
+                                 <ul class="box-shadow-list">
+                                    <li class="box-shadow-wrapper">
+                                       <ul class="box-shadow-inner">
+                                          <li class="sub-menu__list-item">
+                                             <a class="sub-menu__list-link" href="#">Полимерные полы</a>
+                                          </li>
+                                          <li class="sub-menu__list-item">
+                                             <a class="sub-menu__list-link" href="#">Наливные полы</a>
+                                          </li>
+                                          <li class="sub-menu__list-item">
+                                             <a class="sub-menu__list-link" href="#">Эпоксидные полы</a>
+                                          </li>
+                                          <li class="sub-menu__list-item">
+                                             <a class="sub-menu__list-link" href="#">Полиуретановые полы</a>
+                                          </li>
+                                          <li class="sub-menu__list-item">
+                                             <a class="sub-menu__list-link" href="#">Метилметакрилатный пол</a>
+                                          </li>
+                                          <li class="sub-menu__list-item">
+                                             <a class="sub-menu__list-link" href="#">Устройство полов для
+                                                производства</a>
+                                          </li>
+                                          <li class="sub-menu__list-item">
+                                             <a class="sub-menu__list-link" href="#">Устройство полов для паркинга</a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ul>
                         </li>
+                        <!--===== sub-menu =====-->
                         <li class="menu__list-item">
                            <a class="menu__list-link" href="#catalog">Каталог материалов</a>
                         </li>
@@ -148,6 +189,68 @@
                         </li>
                      </ul>
                   </nav>
+                  <!-- mobile menu -->
+                  <nav class="menu__mobile">
+                     <ul class="menu__list-mobile">
+                        <li class="menu__list-item menu__list-item-logo">
+                           <img class="logo-mobile" src="images/mobile-logo.svg" alt="">
+                        </li>
+                        <li class="menu__list-item">
+                           <a class="menu__list-link" href="#">Главная</a>
+                        </li>
+                        <li class="menu__list-item">
+                           <a class="menu__list-link" href="#">О компании</a>
+                        </li>
+                        <!-- mobile sub-menu -->
+                        <li class="menu__list-item menu__list-item-mobile">
+                           <button class="menu__list-btn-mobile">Услуги</button>
+                           <svg class="mobile-menu__arrow" width="9" height="6" viewBox="0 0 9 6" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M4.5 5.51047C4.36637 5.51047 4.23327 5.45977 4.1313 5.35809L0.152739 1.37954C-0.0509132 1.17564 -0.0509132 0.845785 0.152739 0.642424C0.356392 0.438528 0.686247 0.438528 0.889851 0.642424L4.5 4.25228L8.11015 0.642424C8.3138 0.438528 8.64366 0.438528 8.84726 0.642424C9.05091 0.846076 9.05091 1.17564 8.84726 1.37954L4.86846 5.35809C4.76678 5.45977 4.63339 5.51047 4.5 5.51047Z"
+                                 fill="#232324" />
+                           </svg>
+                           <ul class="sub-menu__list-mobile">
+                              <li class="sub-menu__list-item">
+                                 <a class="sub-menu__list-link" href="#">Полимерные полы</a>
+                              </li>
+                              <li class="sub-menu__list-item">
+                                 <a class="sub-menu__list-link" href="#">Наливные полы</a>
+                              </li>
+                              <li class="sub-menu__list-item">
+                                 <a class="sub-menu__list-link" href="#">Эпоксидные полы</a>
+                              </li>
+                              <li class="sub-menu__list-item">
+                                 <a class="sub-menu__list-link" href="#">Полиуретановые полы</a>
+                              </li>
+                              <li class="sub-menu__list-item">
+                                 <a class="sub-menu__list-link" href="#">Метилметакрилатный пол</a>
+                              </li>
+                              <li class="sub-menu__list-item">
+                                 <a class="sub-menu__list-link" href="#">Устройство полов для
+                                    производства</a>
+                              </li>
+                              <li class="sub-menu__list-item">
+                                 <a class="sub-menu__list-link" href="#">Устройство полов для паркинга</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <!-- mobile sub-menu -->
+                        <li class="menu__list-item">
+                           <a class="menu__list-link" href="#">Каталог материалов</a>
+                        </li>
+                        <li class="menu__list-item">
+                           <a class="menu__list-link" href="#">Наши проекты</a>
+                        </li>
+                        <li class="menu__list-item">
+                           <a class="menu__list-link" href="#">Новости</a>
+                        </li>
+                        <li class="menu__list-item">
+                           <a class="menu__list-link" href="#">Контакты</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <!-- mobile menu -->
                </div>
             </div>
             <div class="container header__slider-container">
@@ -1286,7 +1389,7 @@
          </section>
 
          <section class="optimal">
-            <div class="container">
+            <div class="container optimal__container">
                <div class="optimal__inner">
                   <div class="optimal__body">
                      <div class="section-title__block">
@@ -1303,22 +1406,89 @@
                            </div>
                         </div>
                      </div>
-
                      <form class="optimal__form" action="#">
-
-
-
-
-
-                        <div class="form-item">
-                           <input type="text" id="phone" autocomplete="off" required>
-                           <label for="phone">Ваш телефон <span class="star-required">*</span> </label>
+                        <div class="optimal__form-inner">
+                           <div class="calculation-data__block">
+                              <div class="calculation-data__item">
+                                 <div class="calculation-data__select">
+                                    <select class="multi-default">
+                                       <option class="calculation-data__option" selected>
+                                          Вид работ
+                                       </option>
+                                       <option class="calculation-data__option" value="Устройство полимерных полов">
+                                          Устройство полимерных полов
+                                       </option>
+                                       <option class="calculation-data__option" value="Бетонные работы">
+                                          Бетонные работы
+                                       </option>
+                                       <option class="calculation-data__option" value="Полимерные покрытия">
+                                          Полимерные покрытия
+                                       </option>
+                                       <option class="calculation-data__option" value="Строительство">
+                                          Строительство
+                                       </option>
+                                       <option class="calculation-data__option" value="Специальные покрытия">
+                                          Специальные покрытия
+                                       </option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="calculation-data__item">
+                                 <div class="calculation-data__select">
+                                    <select class="multi-default">
+                                       <option class="calculation-data__option" selected>
+                                          Тип объекта
+                                       </option>
+                                       <option class="calculation-data__option" value="Стадион">
+                                          Стадион
+                                       </option>
+                                       <option class="calculation-data__option" value="Подземная парковка">
+                                          Подземная парковка
+                                       </option>
+                                       <option class="calculation-data__option" value="Торговый центр">
+                                          Торговый центр
+                                       </option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="calculation-data__item">
+                                 <div class="calculation-data__input">
+                                    <div class="field__wrapper">
+                                       <input type="file" name="file" id="field__file" class="field field__file"
+                                          multiple>
+                                       <label class="field__file-wrapper" for="field__file">
+                                          <span class="field__file-fake">Тех. задание если есть</span>
+                                          <span class="field__file-button">
+                                             <img class="file-button__img" src="images/icons/calculation-icon.svg"
+                                                alt="">
+                                             Выбрать
+                                          </span>
+                                       </label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="user-data__block">
+                              <div class="user-data__item">
+                                 <div class="text-field text-field_floating">
+                                    <input class="text-field__input" type="tel" id="phone" placeholder="Ваш телефон *">
+                                    <label class="text-field__label" for="phone">Ваш телефон <span
+                                          class="span__red">*</span>
+                                    </label>
+                                 </div>
+                              </div>
+                              <div class="user-data__item ">
+                                 <div class="text-field text-field_floating">
+                                    <input class="text-field__input" type="email" id="email" placeholder="Ваш email">
+                                    <label class="text-field__label" for="email">Ваш email</label>
+                                 </div>
+                              </div>
+                              <div class="user-data__item">
+                                 <button class="user-data__btn" type="submit">Отправить</button>
+                              </div>
+                           </div>
                         </div>
-
-
-
                      </form>
-
                      <div class="optimal-politics__block">
                         <div class="optimal-politics__info">
                            Нажимая на кнопку «Отправить», вы соглашаетесь с
@@ -1556,6 +1726,7 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    <script src="js/hystmodal.min.js"></script>
    <script src="js/swiper-bundle.min.js"></script>
+   <script src="js/choices.min.js"></script>
    <script src="js/main.min.js"></script>
 </body>
 
