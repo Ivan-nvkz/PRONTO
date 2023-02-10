@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Карточка товара</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="css/choices.min.css">
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+
+   <div class="wrapper">
+      <div class="btn__up">&uarr;</div>
+
+      <header class="header">
+         <div class="header__inner">
+            <div class="container">
+               <div class="header__top">
+                  <div class="header__top-inner">
+                     <div class="logo__block">
+                        <a class="logo" href="index.html">
+                           <img class="logo__img" src="images/logo.svg" alt="логотип">
+                        </a>
+                        <div class="logo__deacription">
+                           Устройство полимерных полов и поставка
+                           строительных материалов с 2001 года
+                        </div>
+                     </div>
+                     <div class="contacts__block">
+                        <div class="contacts__phone-box">
+                           <a class="contacts__phone" href="tel:78003202020" data-da=".menu__list-mobile,767,last">
+                              <svg class="contacts__phone-img" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <g clip-path="url(#clip0_1456_18)">
+                                    <path
+                                       d="M18.9791 21.875C18.8437 21.875 18.7082 21.8646 18.5832 21.8437C10.6041 20.7396 4.26033 14.3958 3.15616 6.41667C3.04158 5.58333 3.29158 4.75 3.84366 4.11458C4.38533 3.48958 5.177 3.125 6.01033 3.125H9.44783C10.3437 3.125 11.0937 3.76042 11.2499 4.63542L11.6562 6.91667C11.8541 8.01042 11.3853 9.125 10.4895 9.77083L10.1457 10.0104C11.4062 11.9271 13.0624 13.5729 14.9999 14.8333L15.2187 14.5312C15.8541 13.625 16.9791 13.1667 18.0728 13.3542L20.3541 13.7604C21.2291 13.9167 21.8645 14.6771 21.8645 15.5625V19C21.8645 19.8333 21.4999 20.625 20.8749 21.1771C20.3541 21.625 19.677 21.875 18.9791 21.875ZM6.01033 4.6875C5.62491 4.6875 5.27075 4.84375 5.01033 5.14583C4.76033 5.4375 4.64575 5.82292 4.69783 6.20833C5.70825 13.4896 11.5103 19.2917 18.7916 20.3021C19.177 20.3542 19.5624 20.2396 19.8541 19.9896C20.1457 19.7292 20.3124 19.3854 20.3124 18.9896V15.5521C20.3124 15.4167 20.2187 15.3125 20.0937 15.2917L17.8124 14.8854C17.302 14.8021 16.802 15.0104 16.5103 15.4271L15.8645 16.3333C15.6249 16.6667 15.177 16.7604 14.8228 16.5521C12.1874 15 9.96866 12.8021 8.427 10.1979C8.21866 9.84375 8.31241 9.39583 8.64575 9.16667L9.57283 8.51042C9.9895 8.21875 10.1978 7.70833 10.1145 7.20833L9.70825 4.90625C9.68741 4.78125 9.57283 4.6875 9.44783 4.6875H6.01033Z"
+                                       fill="#F27934" />
+                                 </g>
+                                 <defs>
+                                    <clipPath id="clip0_1456_18">
+                                       <rect width="25" height="25" fill="white" />
+                                    </clipPath>
+                                 </defs>
+                              </svg>
+                              +7 (800) 320 20 20
+                           </a>
+                           <p class="phone__time" data-da=".menu__list-mobile,767,last">
+                              с 09:00 до 18:00 (по московскому времени)
+                           </p>
+                           <a class="contacts__phone-mobile" href="tel:+78003202020">
+                              <svg class="phone-mobile__img" width="35" height="37" viewBox="0 0 35 37" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <rect width="35" height="37" rx="17.5" fill="#FAFAFA" />
+                                 <g clip-path="url(#clip0_1456_4550)">
+                                    <path
+                                       d="M23.9791 27.875C23.8437 27.875 23.7082 27.8646 23.5832 27.8437C15.6041 26.7396 9.26033 20.3958 8.15616 12.4167C8.04158 11.5833 8.29158 10.75 8.84366 10.1146C9.38533 9.48958 10.177 9.125 11.0103 9.125H14.4478C15.3437 9.125 16.0937 9.76042 16.2499 10.6354L16.6562 12.9167C16.8541 14.0104 16.3853 15.125 15.4895 15.7708L15.1457 16.0104C16.4062 17.9271 18.0624 19.5729 19.9999 20.8333L20.2187 20.5312C20.8541 19.625 21.9791 19.1667 23.0728 19.3542L25.3541 19.7604C26.2291 19.9167 26.8645 20.6771 26.8645 21.5625V25C26.8645 25.8333 26.4999 26.625 25.8749 27.1771C25.3541 27.625 24.677 27.875 23.9791 27.875ZM11.0103 10.6875C10.6249 10.6875 10.2707 10.8438 10.0103 11.1458C9.76033 11.4375 9.64575 11.8229 9.69783 12.2083C10.7082 19.4896 16.5103 25.2917 23.7916 26.3021C24.177 26.3542 24.5624 26.2396 24.8541 25.9896C25.1457 25.7292 25.3124 25.3854 25.3124 24.9896V21.5521C25.3124 21.4167 25.2187 21.3125 25.0937 21.2917L22.8124 20.8854C22.302 20.8021 21.802 21.0104 21.5103 21.4271L20.8645 22.3333C20.6249 22.6667 20.177 22.7604 19.8228 22.5521C17.1874 21 14.9687 18.8021 13.427 16.1979C13.2187 15.8437 13.3124 15.3958 13.6457 15.1667L14.5728 14.5104C14.9895 14.2188 15.1978 13.7083 15.1145 13.2083L14.7082 10.9062C14.6874 10.7812 14.5728 10.6875 14.4478 10.6875H11.0103Z"
+                                       fill="#595959" />
+                                 </g>
+                                 <defs>
+                                    <clipPath id="clip0_1456_4550">
+                                       <rect width="25" height="25" fill="white" transform="translate(5 6)" />
+                                    </clipPath>
+                                 </defs>
+                              </svg>
+                           </a>
+                        </div>
+                        <div class="contacts__social-box" data-da=".phone__time,390,last">
+                           <ul class="contacts__social-list">
+                              <li class="contacts__social-item">
+                                 <a class="contacts__social-link" href="#">
+                                    <svg class="social__img social__img-whatsapp" width="25" height="26"
+                                       viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path
+                                          d="M17.4189 15.146C17.1528 15.0093 15.8271 14.3599 15.5806 14.272C15.334 14.1792 15.1533 14.1353 14.9751 14.4087C14.7944 14.6797 14.2817 15.2827 14.1206 15.4658C13.9644 15.6465 13.8057 15.6685 13.5396 15.5342C11.9575 14.7432 10.9199 14.123 9.87744 12.3335C9.60156 11.8574 10.1533 11.8916 10.6685 10.8638C10.7563 10.6831 10.7124 10.5293 10.644 10.3926C10.5757 10.2559 10.0386 8.93262 9.81396 8.39307C9.59668 7.86816 9.37207 7.94141 9.2085 7.93164C9.05225 7.92187 8.87402 7.92188 8.69336 7.92188C8.5127 7.92188 8.22217 7.99023 7.97559 8.25635C7.729 8.52734 7.0332 9.1792 7.0332 10.5024C7.0332 11.8257 7.99756 13.1074 8.12939 13.2881C8.26611 13.4688 10.0264 16.1836 12.729 17.353C14.438 18.0903 15.1069 18.1538 15.9614 18.0269C16.4814 17.9487 17.5532 17.3774 17.7754 16.7451C17.9976 16.1152 17.9976 15.5757 17.9316 15.4634C17.8657 15.3438 17.6851 15.2754 17.4189 15.146Z"
+                                          fill="#989898" />
+                                       <path
+                                          d="M22.588 8.76172C22.0363 7.45068 21.2453 6.27393 20.237 5.26318C19.2287 4.25488 18.0519 3.46143 16.7384 2.91211C15.3956 2.34814 13.9699 2.0625 12.5001 2.0625H12.4513C10.9718 2.06982 9.53871 2.36279 8.19106 2.93896C6.88979 3.49561 5.72279 4.28662 4.72426 5.29492C3.72572 6.30322 2.94203 7.4751 2.40004 8.78125C1.83852 10.1338 1.55531 11.5718 1.56264 13.0513C1.56996 14.7456 1.97524 16.4277 2.73451 17.9316V21.6426C2.73451 22.2627 3.23744 22.7656 3.85756 22.7656H7.57094C9.07485 23.5249 10.757 23.9302 12.4513 23.9375H12.5026C13.965 23.9375 15.3834 23.6543 16.7189 23.1001C18.025 22.5557 19.1994 21.7744 20.2052 20.7759C21.2135 19.7773 22.007 18.6104 22.5612 17.3091C23.1373 15.9614 23.4303 14.5283 23.4376 13.0488C23.445 11.562 23.1569 10.1191 22.588 8.76172ZM18.8991 19.4551C17.1876 21.1494 14.9171 22.082 12.5001 22.082H12.4586C10.9865 22.0747 9.52406 21.7085 8.23256 21.02L8.02748 20.9102H4.58998V17.4727L4.48012 17.2676C3.79164 15.9761 3.42543 14.5137 3.41811 13.0415C3.40834 10.6074 4.33852 8.32227 6.04506 6.60107C7.74916 4.87988 10.027 3.92773 12.4611 3.91797H12.5026C13.7233 3.91797 14.9074 4.15478 16.0231 4.62354C17.112 5.08008 18.0885 5.73682 18.9284 6.57666C19.7658 7.41406 20.4249 8.39307 20.8815 9.48193C21.3551 10.6099 21.5919 11.8062 21.5871 13.0415C21.5724 15.4731 20.6178 17.751 18.8991 19.4551Z"
+                                          fill="#989898" />
+                                    </svg>
+                                 </a>
+                              </li>
+                              <li class="contacts__social-item">
+                                 <a class="contacts__social-link" href="#">
+                                    <svg class="social__img social__img-telegram" width="25" height="26"
+                                       viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <g clip-path="url(#clip0_1456_29)">
+                                          <path
+                                             d="M24.1673 3L0.833984 11.3333L7.50065 14.6667L17.5007 8L10.834 16.3333L20.834 23L24.1673 3Z"
+                                             stroke="#989898" stroke-width="2" stroke-linejoin="round" />
+                                       </g>
+                                       <defs>
+                                          <clipPath id="clip0_1456_29">
+                                             <rect width="25" height="25" fill="white" transform="translate(0 0.5)" />
+                                          </clipPath>
+                                       </defs>
+                                    </svg>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="contacts__tender-box">
+                           <button class="tender__btn" data-popup="#tender" data-da=".menu__list-mobile,620,last">
+                              Пригласить на тендер
+                              <svg class="tender__btn-img" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M8.11933 6.79843L8.10372 0.632108L9.97639 0.636821L10 10L0.636822 9.97639L0.6321 8.10373L6.79851 8.11925L0 1.32081L1.32081 0L8.11933 6.79843Z"
+                                    fill="#F27934" />
+                              </svg>
+                           </button>
+                        </div>
+                     </div>
+                     <button type="button" class="icon-menu"><span></span></button>
+                  </div>
+               </div>
+            </div>
+            <div class="container">
+               <div class="header__navigation">
+                  <nav class="menu">
+                     <ul class="menu__list">
+                        <li class="menu__list-item">
+                           <a class="menu__list-link" href="index.html">Главная</a>
+                        </li>
+                        <li class="menu__list-item">
+                           <a class="menu__list-link" href="#company">о Компании</a>
+                        </li>
+                        <!--===== sub-menu =====-->
+                        <li class="menu__list-item menu__list-item-services">
+                           <a class="menu__list-link" href="#services">Услуги</a>
+                           <svg class="menu__arrow arrow" width="12" height="8" viewBox="0 0 12 8" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                 d="M5.55868 6.79219L5.96577 7.19927L11.4658 1.69922L10.6516 0.885045L5.93731 5.59938L1.05227 0.714331L0.266548 1.50005L5.55868 6.79219Z"
+                                 fill="#232324" />
+                           </svg>
+                           <ul class="sub-menu__list">
+                              <li class="box-shadow-item">
+                                 <ul class="box-shadow-list">
+                                    <li class="box-shadow-wrapper">
+                                       <ul class="box-shadow-inner">
+                                          <li class="sub-menu__list-item">
+                                             <a class="sub-menu__list-link" href="#">Полимерные полы</a>
+                                          </li>
+                                          <li class="sub-menu__list-item">
+                                             <a class="sub-menu__list-link" href="#">Наливные полы</a>
+                                          </li>
+                                          <li class="sub-menu__list-item">
+                                             <a class="sub-menu__list-link" href="#">Эпоксидные полы</a>
+                                          </li>
+                                          <li class="sub-menu__list-item">
+                                             <a class="sub-menu__list-link" href="#">Полиуретановые полы</a>
+                                          </li>
+                                          <li class="sub-menu__list-item">
+                                             <a class="sub-menu__list-link" href="#">Метилметакрилатный пол</a>
+                                          </li>
+                                          <li class="sub-menu__list-item">
+                                             <a class="sub-menu__list-link" href="#">Устройство полов для
+                                                производства</a>
+                                          </li>
+                                          <li class="sub-menu__list-item">
+                                             <a class="sub-menu__list-link" href="#">Устройство полов для паркинга</a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </li>
+                        <!--===== sub-menu =====-->
+                        <li class="menu__list-item">
+                           <a class="menu__list-link" href="page-catalog.html">Каталог материалов</a>
+                        </li>
+                        <li class="menu__list-item">
+                           <a class="menu__list-link" href="#projects">Наши проекты</a>
+                        </li>
+                        <li class="menu__list-item">
+                           <a class="menu__list-link" href="#news">Новости</a>
+                        </li>
+                        <li class="menu__list-item">
+                           <a class="menu__list-link" href="#">Контакты</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <!-- mobile menu -->
+                  <nav class="menu__mobile">
+                     <ul class="menu__list-mobile">
+                        <li class="menu__list-item menu__list-item-logo">
+                           <img class="logo-mobile" src="images/mobile-logo.svg" alt="">
+                        </li>
+                        <li class="menu__list-item">
+                           <a class="menu__list-link" href="index.html">Главная</a>
+                        </li>
+                        <li class="menu__list-item">
+                           <a class="menu__list-link" href="#">О компании</a>
+                        </li>
+                        <!-- mobile sub-menu -->
+                        <li class="menu__list-item menu__list-item-mobile">
+                           <button class="menu__list-btn-mobile">Услуги</button>
+                           <svg class="mobile-menu__arrow" width="9" height="6" viewBox="0 0 9 6" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M4.5 5.51047C4.36637 5.51047 4.23327 5.45977 4.1313 5.35809L0.152739 1.37954C-0.0509132 1.17564 -0.0509132 0.845785 0.152739 0.642424C0.356392 0.438528 0.686247 0.438528 0.889851 0.642424L4.5 4.25228L8.11015 0.642424C8.3138 0.438528 8.64366 0.438528 8.84726 0.642424C9.05091 0.846076 9.05091 1.17564 8.84726 1.37954L4.86846 5.35809C4.76678 5.45977 4.63339 5.51047 4.5 5.51047Z"
+                                 fill="#232324" />
+                           </svg>
+                           <ul class="sub-menu__list-mobile">
+                              <li class="sub-menu__list-item">
+                                 <a class="sub-menu__list-link" href="#">Полимерные полы</a>
+                              </li>
+                              <li class="sub-menu__list-item">
+                                 <a class="sub-menu__list-link" href="#">Наливные полы</a>
+                              </li>
+                              <li class="sub-menu__list-item">
+                                 <a class="sub-menu__list-link" href="#">Эпоксидные полы</a>
+                              </li>
+                              <li class="sub-menu__list-item">
+                                 <a class="sub-menu__list-link" href="#">Полиуретановые полы</a>
+                              </li>
+                              <li class="sub-menu__list-item">
+                                 <a class="sub-menu__list-link" href="#">Метилметакрилатный пол</a>
+                              </li>
+                              <li class="sub-menu__list-item">
+                                 <a class="sub-menu__list-link" href="#">Устройство полов для
+                                    производства</a>
+                              </li>
+                              <li class="sub-menu__list-item">
+                                 <a class="sub-menu__list-link" href="#">Устройство полов для паркинга</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <!-- mobile sub-menu -->
+                        <li class="menu__list-item">
+                           <a class="menu__list-link" href="#">Каталог материалов</a>
+                        </li>
+                        <li class="menu__list-item">
+                           <a class="menu__list-link" href="#">Наши проекты</a>
+                        </li>
+                        <li class="menu__list-item">
+                           <a class="menu__list-link" href="#">Новости</a>
+                        </li>
+                        <li class="menu__list-item">
+                           <a class="menu__list-link" href="#">Контакты</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <!-- mobile menu -->
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <div class="breadcrumbs">
+         <div class="container">
+            <div class="breadcrumbs__body">
+               <div class="breadcrumbs__inner">
+                  <ul class="breadcrumbs__list mobile-overflow ">
+                     <li class="breadcrumbs__list-item">
+                        <a class="breadcrumbs__list-item-link breadcrumbs__list-item-link--great" href="index.html">
+                           Главная
+                        </a>
+                     </li>
+                     <li class="breadcrumbs__list-item">
+                        <a class="breadcrumbs__list-item-link breadcrumbs__list-item-link--great"
+                           href="page-catalog.html">
+                           Каталог
+                        </a>
+                     </li>
+                     <li class="breadcrumbs__list-item">
+                        <span class="breadcrumbs__list-item-link--color">Наливантус 09</span>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <main class="main">
+
+
+
+         <section class="product-card">
+            <div class="container">
+               <div class="product-card__inner">
+                  <div class="product-card__slider-block"></div>
+                  <div class="product-card__content-block"></div>
+               </div>
+
+               <div class="card__tabs-block">
+                  <div class="card__tabs-inner">
+                     <div class="tabs-box">
+                        <div class="tabs-box__inner">
+                           <div data-tabs="525" data-tabs-animate="500" class="tabs">
+                              <nav data-tabs-titles class="tabs__navigation">
+                                 <button type="button" class="tabs__title _tab-active">Описание</button>
+                                 <button type="button" class="tabs__title">Характеристики</button>
+                                 <button type="button" class="tabs__title">Применение</button>
+                                 <button type="button" class="tabs__title">Инструкция</button>
+                              </nav>
+                              <div data-tabs-body class="tabs__content">
+                                 <div class="tabs-body">
+                                    <p class="tabs-body__text">
+                                       Высокий уровень вовлечения представителей целевой аудитории является четким
+                                       доказательством простого факта: семантический разбор внешних противодействий
+                                       требует анализа системы обучения кадров, соответствующей насущным потребностям.
+                                       Повседневная практика показывает, что реализация намеченных плановых заданий
+                                       способствует повышению качества направлений прогрессивного развития.
+                                    </p>
+                                    <p class="tabs-body__text">
+                                       Не следует, однако, забывать, что разбавленное изрядной долей эмпатии,
+                                       рациональное мышление в значительной степени обусловливает важность поставленных
+                                       обществом задач.
+                                       В частности, глубокий уровень погружения позволяет выполнить важные задания по
+                                       разработке новых принципов формирования материально-технической и кадровой базы.
+                                    </p>
+                                    <p class="tabs-body__text">
+                                       В частности, глубокий уровень погружения позволяет выполнить важные задания по
+                                       разработке новых принципов формирования материально-технической и кадровой базы.
+                                    </p>
+                                 </div>
+                                 <div class="tabs-body">
+                                    <p class="tabs-body__text">
+                                       Характеристики
+                                       Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                                       тексты. Над рукописи необходимыми они это страна возвращайся себя свою. Вопрос
+                                       наш реторический текста подзаголовок проектах, путь он страну курсивных если.
+                                    </p>
+                                 </div>
+                                 <div class="tabs-body">
+                                    <p class="tabs-body__text">
+                                       Применение
+                                       Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные
+                                       тексты. Даль своих текстов города пустился ты живет страну за свою путь скатился
+                                       речью, продолжил грустный они переписывается заманивший домах текст!
+                                    </p>
+                                 </div>
+                                 <div class="tabs-body">
+                                    <p class="tabs-body__text">
+                                       Инструкция
+                                       Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                                       тексты. Рукописи пор текстов коварный лучше имеет ведущими букв точках свой
+                                       которой снова ipsum, рот языкового правилами. Собрал однажды вершину осталось?
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </section>
+
+
+         <section class="optimal">
+            <div class="container optimal__container">
+               <div class="optimal__inner">
+                  <div class="optimal__body">
+                     <div class="section-title__block">
+                        <div class="title__block-inner">
+                           <div class="title__block-text">
+                              <h2 class="section__title section__title-optimal"><span class="section__title--bold">
+                                    Найдем <br class="title-optimal__br"> оптимальное решение
+                                 </span>
+                                 для вашей задачи </h2>
+                              <p class="section__title-info  section__title-optimal-info">
+                                 Отправьте данные и мы расчитаем объем, дадим смету и подберем необходимый материал для
+                                 вашего объекта
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <form class="optimal__form" action="#">
+                        <div class="optimal__form-inner">
+                           <div class="calculation-data__block">
+                              <div class="calculation-data__item">
+                                 <div class="calculation-data__select">
+                                    <select class="multi-default">
+                                       <option class="calculation-data__option" selected>
+                                          Вид работ
+                                       </option>
+                                       <option class="calculation-data__option" value="Устройство полимерных полов">
+                                          Устройство полимерных полов
+                                       </option>
+                                       <option class="calculation-data__option" value="Бетонные работы">
+                                          Бетонные работы
+                                       </option>
+                                       <option class="calculation-data__option" value="Полимерные покрытия">
+                                          Полимерные покрытия
+                                       </option>
+                                       <option class="calculation-data__option" value="Строительство">
+                                          Строительство
+                                       </option>
+                                       <option class="calculation-data__option" value="Специальные покрытия">
+                                          Специальные покрытия
+                                       </option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="calculation-data__item">
+                                 <div class="calculation-data__select">
+                                    <select class="multi-default">
+                                       <option class="calculation-data__option" selected>
+                                          Тип объекта
+                                       </option>
+                                       <option class="calculation-data__option" value="Стадион">
+                                          Стадион
+                                       </option>
+                                       <option class="calculation-data__option" value="Подземная парковка">
+                                          Подземная парковка
+                                       </option>
+                                       <option class="calculation-data__option" value="Торговый центр">
+                                          Торговый центр
+                                       </option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="calculation-data__item">
+                                 <div class="calculation-data__input">
+                                    <div class="field__wrapper">
+                                       <input type="file" name="file" id="field__file" class="field field__file"
+                                          multiple>
+                                       <label class="field__file-wrapper" for="field__file">
+                                          <span class="field__file-fake">Тех. задание если есть</span>
+                                          <span class="field__file-button">
+                                             <img class="file-button__img" src="images/icons/calculation-icon.svg"
+                                                alt="">
+                                             Выбрать
+                                          </span>
+                                       </label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="user-data__block">
+                              <div class="user-data__item">
+                                 <div class="text-field text-field_floating">
+                                    <input class="text-field__input" type="tel" id="phone" placeholder="Ваш телефон *">
+                                    <label class="text-field__label" for="phone">Ваш телефон <span
+                                          class="span__red">*</span>
+                                    </label>
+                                 </div>
+                              </div>
+                              <div class="user-data__item ">
+                                 <div class="text-field text-field_floating">
+                                    <input class="text-field__input" type="email" id="email" placeholder="Ваш email">
+                                    <label class="text-field__label" for="email">Ваш email</label>
+                                 </div>
+                              </div>
+                              <div class="user-data__item">
+                                 <button class="user-data__btn" type="submit">Отправить</button>
+                              </div>
+                           </div>
+                        </div>
+                     </form>
+                     <div class="optimal-politics__block">
+                        <div class="optimal-politics__info">
+                           Нажимая на кнопку «Отправить», вы соглашаетесь с
+                           <a class="optimal-politics__link" href="#">
+                              политикой конфиденциальности
+                           </a> и подтверждаете согласие на
+                           <a class="optimal-politics__link" href="#">
+                              обработку персональных данных
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+      </main>
+
+      <footer class="footer">
+         <div class="container">
+            <div class="footer__inner">
+               <ul class="footer__list">
+                  <li class="footer__item footer__item-info">
+                     <div class="footer__item-body">
+                        <a class="footer__logo" href="#">
+                           <img class="footer__logo-img" src="images/footer-logo.svg" alt="логотип">
+                        </a>
+                        <div class="footer__info-description">
+                           Устройство полимерных полов и поставка строительных материалов с 2001 года
+                        </div>
+                        <div class="footer__info-buttons">
+                           <button class="footer-tender__btn" data-popup="#tender">
+                              Пригласить на тендер
+                              <svg class="tender__btn-img" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M8.11933 6.79843L8.10372 0.632108L9.97639 0.636821L10 10L0.636822 9.97639L0.6321 8.10373L6.79851 8.11925L0 1.32081L1.32081 0L8.11933 6.79843Z"
+                                    fill="#F27934" />
+                              </svg>
+                           </button>
+                           <button class="calculate__btn footer-calculate__btn">
+                              Оставить заявку на расчет
+                           </button>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="footer__item footer__item-navigation">
+                     <div class="navigation-item__top">
+                        <div class="footer__item-body block" data-spollers="380,max">
+                           <button class="footer__item-title block__title" data-spoller>
+                              Устройство полов
+                           </button>
+                           <nav class="footer__menu">
+                              <ul class="footer__menu-list">
+                                 <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">Полимерные полы</a>
+                                 </li>
+                                 <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">Наливные полы</a>
+                                 </li>
+                                 <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">Эпоксидные полы</a>
+                                 </li>
+                                 <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">Полиуретановые полы</a>
+                                 </li>
+                                 <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">Метилметакрилатный пол</a>
+                                 </li>
+                              </ul>
+                           </nav>
+                        </div>
+                     </div>
+                     <div class="navigation-item__bottom">
+                        <div class="footer__item-body block" data-spollers="380,max">
+                           <button class="footer__item-title block__title" data-spoller>
+                              Продукция
+                           </button>
+                           <nav class="footer__menu">
+                              <ul class="footer__menu-list">
+                                 <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">Каталог</a>
+                                 </li>
+                                 <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">Оплата и доставка</a>
+                                 </li>
+                              </ul>
+                           </nav>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="footer__item footer__item-navigation">
+                     <div class="navigation-item__top">
+                        <div class="footer__item-body block" data-spollers="380,max">
+                           <button class="footer__item-title block__title" data-spoller>
+                              Отраслевые решения
+                           </button>
+                           <nav class="footer__menu">
+                              <ul class="footer__menu-list">
+                                 <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">Полы для склада</a>
+                                 </li>
+                                 <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">Полы для производства</a>
+                                 </li>
+                                 <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">Полы для паркинга</a>
+                                 </li>
+                                 <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">Полы для гаража</a>
+                                 </li>
+                                 <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">Полы для спортивных площадок</a>
+                                 </li>
+                              </ul>
+                           </nav>
+                        </div>
+                     </div>
+                     <div class="navigation-item__bottom">
+                        <div class="footer__item-body block" data-spollers="380,max">
+                           <button class="footer__item-title block__title" data-spoller>
+                              Компания
+                           </button>
+                           <nav class="footer__menu">
+                              <ul class="footer__menu-list">
+                                 <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">О компании</a>
+                                 </li>
+                                 <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">Завершенные проекты</a>
+                                 </li>
+                                 <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">Новости</a>
+                                 </li>
+                                 <li class="footer-menu__list-item">
+                                    <a class="footer-menu__list-link" href="#">Контакты</a>
+                                 </li>
+                              </ul>
+                           </nav>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="footer__item footer__item-contacts">
+                     <div class="footer__item-body">
+                        <div class="footer__item-box item-phone__box">
+                           <a class="footer__phone" href="tel:88003332222">
+                              8 (800) 333-22-22
+                           </a>
+                           <p class="contacts__time">
+                              с 09:00 до 18:00 (по московскому времени)
+                           </p>
+                        </div>
+                        <div class="footer__item-box item-mail__box">
+                           <a class="footer__mail" href="mailto:office@prontopol.ru">
+                              office@prontopol.ru
+                           </a>
+                        </div>
+                        <div class="footer__item-box item-address__box">
+                           <address class="footer__address">
+                              г. Санкт-Петербург <br>
+                              ул. Белоостровская, д. 8
+                           </address>
+                        </div>
+                        <div class="footer__item-box item-social__box">
+                           <ul class="contacts__social-list">
+                              <li class="contacts__social-item">
+                                 <a class="contacts__social-link" href="#">
+                                    <svg class="social__img social__img-whatsapp" width="25" height="26"
+                                       viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path
+                                          d="M17.4189 15.146C17.1528 15.0093 15.8271 14.3599 15.5806 14.272C15.334 14.1792 15.1533 14.1353 14.9751 14.4087C14.7944 14.6797 14.2817 15.2827 14.1206 15.4658C13.9644 15.6465 13.8057 15.6685 13.5396 15.5342C11.9575 14.7432 10.9199 14.123 9.87744 12.3335C9.60156 11.8574 10.1533 11.8916 10.6685 10.8638C10.7563 10.6831 10.7124 10.5293 10.644 10.3926C10.5757 10.2559 10.0386 8.93262 9.81396 8.39307C9.59668 7.86816 9.37207 7.94141 9.2085 7.93164C9.05225 7.92187 8.87402 7.92188 8.69336 7.92188C8.5127 7.92188 8.22217 7.99023 7.97559 8.25635C7.729 8.52734 7.0332 9.1792 7.0332 10.5024C7.0332 11.8257 7.99756 13.1074 8.12939 13.2881C8.26611 13.4688 10.0264 16.1836 12.729 17.353C14.438 18.0903 15.1069 18.1538 15.9614 18.0269C16.4814 17.9487 17.5532 17.3774 17.7754 16.7451C17.9976 16.1152 17.9976 15.5757 17.9316 15.4634C17.8657 15.3438 17.6851 15.2754 17.4189 15.146Z"
+                                          fill="#989898" />
+                                       <path
+                                          d="M22.588 8.76172C22.0363 7.45068 21.2453 6.27393 20.237 5.26318C19.2287 4.25488 18.0519 3.46143 16.7384 2.91211C15.3956 2.34814 13.9699 2.0625 12.5001 2.0625H12.4513C10.9718 2.06982 9.53871 2.36279 8.19106 2.93896C6.88979 3.49561 5.72279 4.28662 4.72426 5.29492C3.72572 6.30322 2.94203 7.4751 2.40004 8.78125C1.83852 10.1338 1.55531 11.5718 1.56264 13.0513C1.56996 14.7456 1.97524 16.4277 2.73451 17.9316V21.6426C2.73451 22.2627 3.23744 22.7656 3.85756 22.7656H7.57094C9.07485 23.5249 10.757 23.9302 12.4513 23.9375H12.5026C13.965 23.9375 15.3834 23.6543 16.7189 23.1001C18.025 22.5557 19.1994 21.7744 20.2052 20.7759C21.2135 19.7773 22.007 18.6104 22.5612 17.3091C23.1373 15.9614 23.4303 14.5283 23.4376 13.0488C23.445 11.562 23.1569 10.1191 22.588 8.76172ZM18.8991 19.4551C17.1876 21.1494 14.9171 22.082 12.5001 22.082H12.4586C10.9865 22.0747 9.52406 21.7085 8.23256 21.02L8.02748 20.9102H4.58998V17.4727L4.48012 17.2676C3.79164 15.9761 3.42543 14.5137 3.41811 13.0415C3.40834 10.6074 4.33852 8.32227 6.04506 6.60107C7.74916 4.87988 10.027 3.92773 12.4611 3.91797H12.5026C13.7233 3.91797 14.9074 4.15478 16.0231 4.62354C17.112 5.08008 18.0885 5.73682 18.9284 6.57666C19.7658 7.41406 20.4249 8.39307 20.8815 9.48193C21.3551 10.6099 21.5919 11.8062 21.5871 13.0415C21.5724 15.4731 20.6178 17.751 18.8991 19.4551Z"
+                                          fill="#989898" />
+                                    </svg>
+                                 </a>
+                              </li>
+                              <li class="contacts__social-item">
+                                 <a class="contacts__social-link" href="#">
+                                    <svg class="social__img social__img-telegram" width="25" height="26"
+                                       viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <g clip-path="url(#clip0_1456_29)">
+                                          <path
+                                             d="M24.1673 3L0.833984 11.3333L7.50065 14.6667L17.5007 8L10.834 16.3333L20.834 23L24.1673 3Z"
+                                             stroke="#989898" stroke-width="2" stroke-linejoin="round" />
+                                       </g>
+                                       <defs>
+                                          <clipPath id="clip0_1456_291">
+                                             <rect width="25" height="25" fill="white" transform="translate(0 0.5)" />
+                                          </clipPath>
+                                       </defs>
+                                    </svg>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+               <div class="footer__copy">
+                  <div class="footer__copy-num">
+                     © Pronto. 2001-2023
+                  </div>
+                  <a class="footer__policy" href="#">
+                     Политика обработки персональных данных
+                  </a>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+
+      <div class="hystmodal" id="tender" aria-hidden="true">
+         <div class="hystmodal__wrap">
+            <div class="hystmodal__window" role="dialog" aria-modal="true">
+               <button data-hystclose class="hystmodal__close">Закрыть</button>
+               <div class="popup__body">
+                  Сообщение 2
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut eveniet sequi, ut reiciendis cum
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+
+
+
+
+
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="js/hystmodal.min.js"></script>
+   <script src="js/swiper-bundle.min.js"></script>
+   <script src="js/choices.min.js"></script>
+   <script src="js/mixitup.min.js"></script>
+   <script src="js/main.min.js"></script>
+</body>
+
+</html>
