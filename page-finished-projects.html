@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Карточка товара</title>
+   <title>Завершенные проекты</title>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -267,13 +267,7 @@
                         </a>
                      </li>
                      <li class="breadcrumbs__list-item">
-                        <a class="breadcrumbs__list-item-link breadcrumbs__list-item-link--great"
-                           href="page-catalog.html">
-                           Каталог
-                        </a>
-                     </li>
-                     <li class="breadcrumbs__list-item">
-                        <span class="breadcrumbs__list-item-link--color">Наливантус 09</span>
+                        Проекты
                      </li>
                   </ul>
                </div>
@@ -281,247 +275,240 @@
          </div>
       </div>
 
+      <div class="section-title__block">
+         <div class="container">
+            <div class="title__block-inner page-title__block-inner">
+               <div class="title__block-text">
+                  <h2 class="section__title  page-section__title">
+                     <span class="section__title--bold">
+                        Завершенные проекты
+                     </span>
+                  </h2>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
       <main class="main">
 
-         <section class="product-card">
+         <section class="finished">
+            <h6 class="finished-section-title">Завершенные проекты</h6>
             <div class="container">
-               <div class="product-card__inner">
-                  <div class="product-card__slider-block">
-                     <div class="card__slider-inner">
-                        <div class="swiper card__slider">
-                           <div class="swiper-wrapper card__slider-wrapper">
-                              <div class="swiper-slide card__slide">
-                                 <div class="card__slide-pictures">
-                                    <img class="card__slide-img" src="images/slider/card__slider/card-img-01.png"
-                                       alt="">
-                                 </div>
-                              </div>
-                              <div class="swiper-slide card__slide">
-                                 <div class="card__slide-pictures">
-                                    <img class="card__slide-img" src="images/test-img.jpg" alt="">
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="swiper-button-prev card-button-prev">
-                              <svg class="header-slide__btn-img" width="50" height="50" viewBox="0 0 50 50" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <g clip-path="url(#clip0_1456_58)">
-                                    <path
-                                       d="M25.0117 0C11.211 0 0.0233345 11.1929 0.0233345 25C0.0233345 38.8071 11.211 50 25.0117 50C38.8123 50 50 38.8071 50 25C50 11.1929 38.8123 0 25.0117 0Z"
-                                       fill="white" />
-                                    <path class="header-slide__btn-arrow" fill-rule="evenodd" clip-rule="evenodd"
-                                       d="M19.8397 24.4944L19.2504 25.0837L27.5 33.3333L28.6785 32.1547L21.6074 25.0837L28.6785 18.0126L27.5 16.8341L19.8397 24.4944Z"
-                                       fill="#232324" />
-                                 </g>
-                                 <defs>
-                                    <clipPath id="clip0_1456_58">
-                                       <rect width="50" height="50" fill="white" transform="matrix(-1 0 0 -1 50 50)" />
-                                    </clipPath>
-                                 </defs>
-                              </svg>
-                           </div>
-                           <div class="swiper-button-next card-button-next">
-                              <svg class="header-slide__btn-img" width="50" height="50" viewBox="0 0 50 50" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <g clip-path="url(#clip0_1456_62)">
-                                    <path
-                                       d="M24.9883 50C38.789 50 49.9767 38.8071 49.9767 25C49.9767 11.1929 38.789 0 24.9883 0C11.1877 0 0 11.1929 0 25C0 38.8071 11.1877 50 24.9883 50Z"
-                                       fill="white" />
-                                    <path class="header-slide__btn-arrow" fill-rule="evenodd" clip-rule="evenodd"
-                                       d="M30.1603 25.5056L30.7496 24.9163L22.5 16.6667L21.3215 17.8453L28.3926 24.9163L21.3215 31.9874L22.5 33.1659L30.1603 25.5056Z"
-                                       fill="#232324" />
-                                 </g>
-                                 <defs>
-                                    <clipPath id="clip0_1456_62">
-                                       <rect width="50" height="50" fill="white" />
-                                    </clipPath>
-                                 </defs>
-                              </svg>
-                           </div>
-                        </div>
+               <div class="finished__inner">
+                  <div class="finished__filter-buttons">
+                     <div class="filter__btn-title"><span class="filter__btn-title--bold">Фильтр</span> по
+                        объектам
                      </div>
-                     <div class="card__slider-description">
-                        <img class="card-description__img" src="images/icons/card-description-img.svg" alt="">
-                        Товар для профессионального применения, требует подготовки основания
-                     </div>
+                     <button class="filter__btn filter__btn-all  filter__btn--active " data-filter="all">Все
+                        объекты</button>
+                     <button class="filter__btn" data-filter=".category-a">Устройство полов</button>
+                     <button class="filter__btn" data-filter=".category-b">Ремонт полов</button>
+                     <button class="filter__btn" data-filter=".category-c">Гидроизоляция бетона</button>
+                     <button class="filter__btn" data-filter=".category-d">Спортивные покрытия</button>
                   </div>
-                  <div class="product-card__content-block">
-                     <div class="card-content__box card-content__title-box">
-                        <div class="card-content__title">
-                           Наливантус 09
-                        </div>
-                        <div class="card-content__available">
-                           в наличии
-                        </div>
-                     </div>
-                     <div class="card-content__box card-content__info-box">
-                        <div class="card-content__info">
-                           Эпоксидный наливной пол для устройства надежных самовыравнивающихся полов на объектах
-                           промышленного назначения и паркингах. Низковязкий, колерованный.
-                        </div>
-                     </div>
-                     <div class="card-content__box card-content__price-box">
-                        <div class="card-content__price-money">
-                           5 300 руб.
-                        </div>
-                        <div class="card-content__price-weight">
-                           10 кг.
-                        </div>
-                     </div>
-                     <div class="card-content__box card-content__buttons-box">
-                        <button class="card__order-btn">Заказать</button>
-                        <button class="card__consultation-btn">Консультация специалиста</button>
-                     </div>
-                     <div class="card-content__box card-content__payment-box">
-                        <ul class="card-payment__list">
-                           <li class="card-payment__item">
-                              <div class="card-payment__block block " data-spollers=",max">
-                                 <button class="card-spoller-btn block__title" data-spoller>
-                                    <img class="card-icon" src="images/icons/prepackaged-icon.svg" alt="">
-                                    Фасовка
-                                 </button>
-                                 <div class="card-payment__body">
-                                    <div class="card-payment__content">
-                                       <p class="card-payment__text">
-                                          Фасовка Фасовка Фасовка
-                                          Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
-                                          тексты. Вопроса ее которое рыбными предупреждал заманивший алфавит
-                                          парадигматическая деревни! Встретил это гор, себя безопасную необходимыми меня
-                                          что раз эта строчка.
-                                       </p>
-                                    </div>
-                                 </div>
-                              </div>
-                           </li>
-                           <li class="card-payment__item">
-                              <div class="card-payment__block block " data-spollers=",max">
-                                 <button class="card-spoller-btn block__title" data-spoller>
-                                    <img class="card-icon" src="images/icons/size-icon.svg" alt="">
-                                    Размеры
-                                 </button>
-                                 <div class="card-payment__body">
-                                    <div class="card-payment__content">
-                                       <p class="card-payment__text">
-                                          Размеры Размеры Размеры
-                                          Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные
-                                          тексты. Рот lorem великий деревни, над путь строчка вскоре семантика
-                                          безопасную, большого несколько сбить раз свою, маленькая что единственное
-                                          предупреждал даль.
-                                       </p>
-                                    </div>
-                                 </div>
-                              </div>
-                           </li>
-                           <li class="card-payment__item">
-                              <div class="card-payment__block block " data-spollers=",max">
-                                 <button class="card-spoller-btn block__title" data-spoller>
-                                    <img class="card-icon" src="images/icons/delivery-icon.svg" alt="">
-                                    Доставка
-                                 </button>
-                                 <div class="card-payment__body">
-                                    <div class="card-payment__content">
-                                       <p class="card-payment__text">
-                                          Доставка Доставка Доставка Далеко-далеко за словесными горами в стране гласных
-                                          и согласных живут рыбные тексты. Прямо, если города строчка одна языком
-                                          подпоясал напоивший. Всеми, скатился она толку пор даль бросил дорогу запятой
-                                          маленькая грустный вопроса.
-                                       </p>
-                                    </div>
-                                 </div>
-                              </div>
-                           </li>
-                           <li class="card-payment__item">
-                              <div class="card-payment__block block " data-spollers=",max">
-                                 <button class="card-spoller-btn block__title" data-spoller>
-                                    <img class="card-icon" src="images/icons/payment-icon.svg" alt="">
-                                    Оплата
-                                 </button>
-                                 <div class="card-payment__body">
-                                    <div class="card-payment__content">
-                                       <div class="content__pay-box  card__pay-box">
-                                          <a class="content__pay-link" href="#">
-                                             <img class="content__pay-pictures" src="images/icons/pay-icon-mir-01.svg"
-                                                alt="карта мир">
-                                          </a>
-                                          <a class="content__pay-link" href="#">
-                                             <img class="content__pay-pictures" src="images/icons/pay-icon-visa-02.svg"
-                                                alt="карта мир">
-                                          </a>
-                                          <a class="content__pay-link" href="#">
-                                             <img class="content__pay-pictures"
-                                                src="images/icons/pay-icon-master-03.svg" alt="карта мир">
-                                          </a>
-                                          <a class="content__pay-link" href="#">
-                                             <img class="content__pay-pictures" src="images/icons/pay-icon-apay-04.svg"
-                                                alt="карта мир">
-                                          </a>
-                                          <a class="content__pay-link" href="#">
-                                             <img class="content__pay-pictures" src="images/icons/pay-icon-gpay-05.svg"
-                                                alt="карта мир">
-                                          </a>
+                  <div class="finished__cards-block">
+                     <div class="finished__card  mix category-a">
+                        <div class="finished__card-body">
+                           <div class="finished__picture">
+                              <img class="completed__slide-img"
+                                 src="images/slider/completed__slider/completed-img-01.jpg" alt="">
+                           </div>
+                           <div class="completed__slide-content">
+                              <div class="completed__box completed__name-box">
+                                 <div class="name-box__inner">
+                                    <div class="name-box__body">
+                                       <div class="completed__name-title">
+                                          ARTSTUDIO MOSKOVSKY
+                                       </div>
+                                       <div class="completed__text completed__name-text">
+                                          г. Санкт-Петербург
                                        </div>
                                     </div>
+                                    <div class="name-box__pictures">
+                                       <img class="name-box__img" src="images/partners/partners-img-08.svg" alt="">
+                                    </div>
                                  </div>
                               </div>
-                           </li>
-                        </ul>
+                              <div class="completed__box completed__description-box">
+                                 <div class="completed__description-title completed__box-title">
+                                    Краткое описание объекта:
+                                 </div>
+                                 <div class="completed__text completed__description-text">
+                                    Апарт-отель ARTSTUDIO Moskovsky расположен у Московского проспекта, у метро
+                                    «Фрунзенская».
+                                 </div>
+                                 <div class="completed__text completed__description-text">
+                                    Он дважды признан «Лучшим апарт-отелем», в 2021 г. по мнению Arendator Awards и в
+                                    2019 г. по версии «Делового Петербурга». А в 2020 г. стал финалистом премии Urban
+                                    Awards в номинации «Лучший отель бизнес-класса».
+                                 </div>
+                              </div>
+                              <div class="completed__box completed__performed-box">
+                                 <div class="completed__performed-title completed__box-title">
+                                    Выполенные работы:
+                                 </div>
+                                 <div class="completed__text completed__performed-text">
+                                    Устройсво полимерных полов паркина
+                                 </div>
+                                 <div class="completed__text completed__performed-text">
+                                    Нанесение цветографической раскраски
+                                 </div>
+                              </div>
+                              <div class="completed__box completed__buttons-box  finished__buttons-box">
+                                 <a class="more-project__btn finished-more__btn " href="page-single-project.html">
+                                    Подробнее про проект
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
                      </div>
-                  </div>
-               </div>
-               <div class="card__tabs-block">
-                  <div class="card__tabs-inner">
-                     <div class="tabs-box">
-                        <div class="tabs-box__inner">
-                           <div data-tabs="650" data-tabs-animate="500" class="tabs">
-                              <nav data-tabs-titles class="tabs__navigation">
-                                 <button type="button" class="tabs__title _tab-active">Описание</button>
-                                 <button type="button" class="tabs__title">Характеристики</button>
-                                 <button type="button" class="tabs__title">Применение</button>
-                                 <button type="button" class="tabs__title">Инструкция</button>
-                              </nav>
-                              <div data-tabs-body class="tabs__content">
-                                 <div class="tabs-body">
-                                    <p class="tabs-body__text">
-                                       Высокий уровень вовлечения представителей целевой аудитории является четким
-                                       доказательством простого факта: семантический разбор внешних противодействий
-                                       требует анализа системы обучения кадров, соответствующей насущным потребностям.
-                                       Повседневная практика показывает, что реализация намеченных плановых заданий
-                                       способствует повышению качества направлений прогрессивного развития.
-                                    </p>
-                                    <p class="tabs-body__text">
-                                       Не следует, однако, забывать, что разбавленное изрядной долей эмпатии,
-                                       рациональное мышление в значительной степени обусловливает важность поставленных
-                                       обществом задач.
-                                    </p>
-                                    <p class="tabs-body__text">
-                                       В частности, глубокий уровень погружения позволяет выполнить важные задания по
-                                       разработке новых принципов формирования материально-технической и кадровой базы.
-                                    </p>
+                     <div class="finished__card  mix category-b">
+                        <div class="finished__card-body">
+                           <div class="finished__picture">
+                              <img class="completed__slide-img" src="images/finished-img-02.jpg" alt="">
+                           </div>
+                           <div class="completed__slide-content">
+                              <div class="completed__box completed__name-box">
+                                 <div class="name-box__inner">
+                                    <div class="name-box__body">
+                                       <div class="completed__name-title">
+                                          Центральный офис Сбербанка
+                                       </div>
+                                       <div class="completed__text completed__name-text">
+                                          г. Москва
+                                       </div>
+                                    </div>
+                                    <div class="name-box__pictures">
+                                       <img class="name-box__img" src="images/partners/partners-img-01.svg" alt="">
+                                    </div>
                                  </div>
-                                 <div class="tabs-body">
-                                    <p class="tabs-body__text">
-                                       Характеристики
-                                       Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
-                                       тексты. Над рукописи необходимыми они это страна возвращайся себя свою. Вопрос
-                                       наш реторический текста подзаголовок проектах, путь он страну курсивных если.
-                                    </p>
+                              </div>
+                              <div class="completed__box completed__description-box">
+                                 <div class="completed__description-title completed__box-title">
+                                    Краткое описание объекта:
                                  </div>
-                                 <div class="tabs-body">
-                                    <p class="tabs-body__text">
-                                       Применение
-                                       Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные
-                                       тексты. Даль своих текстов города пустился ты живет страну за свою путь скатился
-                                       речью, продолжил грустный они переписывается заманивший домах текст!
-                                    </p>
+                                 <div class="completed__text completed__description-text">
+                                    Устройство полов в центральном офисе самого крупного банка в России.
                                  </div>
-                                 <div class="tabs-body">
-                                    <p class="tabs-body__text">
-                                       Инструкция
-                                       Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
-                                       тексты. Рукописи пор текстов коварный лучше имеет ведущими букв точках свой
-                                       которой снова ipsum, рот языкового правилами. Собрал однажды вершину осталось?
-                                    </p>
+                                 <div class="completed__text completed__description-text">
+                                    Дизайнерское решение с использованием белого эпоксидного пола Наливантус 02,
+                                    виниловых стикеров и запечатывающего слоя Наливантус 05 Прозрачный
                                  </div>
+                              </div>
+                              <div class="completed__box completed__performed-box">
+                                 <div class="completed__performed-title completed__box-title">
+                                    Выполенные работы:
+                                 </div>
+                                 <div class="completed__text completed__performed-text">
+                                    Устройсво полимерных полов
+                                 </div>
+                              </div>
+                              <div class="completed__box completed__buttons-box  finished__buttons-box">
+                                 <a class="more-project__btn finished-more__btn " href="page-single-project.html">
+                                    Подробнее про проект
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="finished__card  mix category-c">
+                        <div class="finished__card-body">
+                           <div class="finished__picture">
+                              <img class="completed__slide-img" src="images/finished-img-03.jpg" alt="">
+                           </div>
+                           <div class="completed__slide-content">
+                              <div class="completed__box completed__name-box">
+                                 <div class="name-box__inner">
+                                    <div class="name-box__body">
+                                       <div class="completed__name-title">
+                                          ЖК Legenda Комендантского
+                                       </div>
+                                       <div class="completed__text completed__name-text">
+                                          г. Санкт-Петербург
+                                       </div>
+                                    </div>
+                                    <div class="name-box__pictures">
+                                       <img class="name-box__img" src="images/partners/partners-img-10.svg" alt="">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="completed__box completed__description-box">
+                                 <div class="completed__description-title completed__box-title">
+                                    Краткое описание объекта:
+                                 </div>
+                                 <div class="completed__text completed__description-text">
+                                    Устройство полимерного пола в паркинге нового ЖК Legenda на амортизационной подложке
+                                    Наливантус 01
+                                 </div>
+                                 <div class="completed__text completed__description-text">
+                                    Толщина покрытия 2 мм. Материал покрытия Наливантус 09.
+                                 </div>
+                              </div>
+                              <div class="completed__box completed__performed-box">
+                                 <div class="completed__performed-title completed__box-title">
+                                    Выполенные работы:
+                                 </div>
+                                 <div class="completed__text completed__performed-text">
+                                    Устройсво полимерных полов паркинга
+                                 </div>
+                                 <div class="completed__text completed__performed-text">
+                                    Нанесение цветографической раскраски
+                                 </div>
+                              </div>
+                              <div class="completed__box completed__buttons-box  finished__buttons-box">
+                                 <a class="more-project__btn finished-more__btn " href="page-single-project.html">
+                                    Подробнее про проект
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="finished__card  mix category-d">
+                        <div class="finished__card-body">
+                           <div class="finished__picture">
+                              <img class="completed__slide-img" src="images/finished-img-04.jpg" alt="">
+                           </div>
+                           <div class="completed__slide-content">
+                              <div class="completed__box completed__name-box">
+                                 <div class="name-box__inner">
+                                    <div class="name-box__body">
+                                       <div class="completed__name-title">
+                                          Раздевалка хоккейного клуба СКА
+                                       </div>
+                                       <div class="completed__text completed__name-text">
+                                          г. Санкт-Петербург
+                                       </div>
+                                    </div>
+                                    <div class="name-box__pictures">
+                                       <img class="name-box__img" src="images/partners/partners-img-12.svg" alt="">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="completed__box completed__description-box">
+                                 <div class="completed__description-title completed__box-title">
+                                    Краткое описание объекта:
+                                 </div>
+                                 <div class="completed__text completed__description-text">
+                                    Устройство многослойного полимерного пола на амортизационной подложке (Наливантус
+                                    Спорт). Толщина покрытия 2 мм.
+                                 </div>
+                              </div>
+                              <div class="completed__box completed__performed-box">
+                                 <div class="completed__performed-title completed__box-title">
+                                    Выполенные работы:
+                                 </div>
+                                 <div class="completed__text completed__performed-text">
+                                    Устройсво полимерных полов
+                                 </div>
+                                 <div class="completed__text completed__performed-text">
+                                    Нанесение цветографической раскраски
+                                 </div>
+                              </div>
+                              <div class="completed__box completed__buttons-box  finished__buttons-box">
+                                 <a class="more-project__btn finished-more__btn " href="page-single-project.html">
+                                    Подробнее про проект
+                                 </a>
                               </div>
                            </div>
                         </div>
@@ -531,95 +518,52 @@
             </div>
          </section>
 
-         <section class="similar">
+         <div class="pagination">
             <div class="container">
-               <h6 class="similar__title">
-                  Похожие товары
-               </h6>
-               <div class="similar__inner">
-                  <div class="swiper similar__slider">
-                     <div class="swiper-wrapper similar__items">
-                        <div class="swiper-slide similar__item">
-                           <div class="similar__item-block">
-                              <a class="item-block__similar-pictures" href="page-card.html">
-                                 <img class="item-block__similar-images"
-                                    src="images/slider/mastic-floors__slider/mastic-floors-img-01.png" alt="">
-                              </a>
-                              <div class="item-block__similar-body">
-                                 <a class="item-block__similar-title" href="page-card.html">
-                                    Наливантус 18
-                                 </a>
-                                 <div class="item-block__similar-text">
-                                    Эпоксидный наливной пол для устройства надежных самовыравнивающихся полов на
-                                    объектах промышленного назначения и паркингах. Низковязкий, колерованный.
-                                 </div>
-                                 <div class="item-block__similar-info ">
-                                    <div class="similar__weight">
-                                       10 кг.
-                                    </div>
-                                    <div class="similar__price">
-                                       5 300 руб.
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="swiper-slide similar__item">
-                           <div class="similar__item-block">
-                              <a class="item-block__similar-pictures" href="page-card.html">
-                                 <img class="item-block__similar-images"
-                                    src="images/slider/mastic-floors__slider/mastic-floors-img-01.png" alt="">
-                              </a>
-                              <div class="item-block__similar-body">
-                                 <a class="item-block__similar-title" href="page-card.html">
-                                    Наливантус 19
-                                 </a>
-                                 <div class="item-block__similar-text">
-                                    Эпоксидный наливной пол для устройства надежных самовыравнивающихся полов на
-                                    объектах промышленного назначения и паркингах. Низковязкий, колерованный.
-                                 </div>
-                                 <div class="item-block__similar-info ">
-                                    <div class="similar__weight">
-                                       10 кг.
-                                    </div>
-                                    <div class="similar__price">
-                                       5 300 руб.
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="swiper-slide similar__item">
-                           <div class="similar__item-block">
-                              <a class="item-block__similar-pictures" href="page-card.html">
-                                 <img class="item-block__similar-images"
-                                    src="images/slider/mastic-floors__slider/mastic-floors-img-01.png" alt="">
-                              </a>
-                              <div class="item-block__similar-body">
-                                 <a class="item-block__similar-title" href="page-card.html">
-                                    Наливантус 20
-                                 </a>
-                                 <div class="item-block__similar-text">
-                                    Эпоксидный наливной пол для устройства надежных самовыравнивающихся полов на
-                                    объектах промышленного назначения и паркингах. Низковязкий, колерованный.
-                                 </div>
-                                 <div class="item-block__similar-info ">
-                                    <div class="similar__weight">
-                                       10 кг.
-                                    </div>
-                                    <div class="similar__price">
-                                       5 300 руб.
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="swiper-pagination similar-pagination"></div>
+               <div class="pagination__inner">
+                  <div class="pagination__btn-box pagination__btn-box-left ">
+                     <a class="pagination__btn" href="#">
+                        <svg class="pagination__btn-img" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <rect x="39.5" y="39.5" width="39" height="39" rx="19.5" transform="rotate(-180 39.5 39.5)"
+                              fill="#F5F5F5" />
+                           <path
+                              d="M10.218 19.4693L14.158 15.4693C14.308 15.3193 14.498 15.2493 14.688 15.2493C14.878 15.2493 15.068 15.3193 15.218 15.4693C15.518 15.7593 15.518 16.2293 15.228 16.5293L12.538 19.2493H29.248C29.658 19.2493 29.998 19.5893 29.998 19.9993C29.998 20.4093 29.658 20.7493 29.248 20.7493H12.538L15.228 23.4693C15.518 23.7693 15.518 24.2393 15.218 24.5293C14.928 24.8293 14.448 24.8193 14.158 24.5293L10.218 20.5293C9.92805 20.2293 9.92805 19.7693 10.218 19.4693Z"
+                              fill="#232324" />
+                        </svg>
+                     </a>
+                  </div>
+                  <ul class="pagination-list">
+                     <li class="pagination-list-item list__item--active">
+                        <a class="pagination-list-item__link" href="#">01</a>
+                     </li>
+                     <li class="pagination-list-item">
+                        <a class="pagination-list-item__link" href="#">02</a>
+                     </li>
+                     <li class="pagination-list-item ">
+                        <a class="pagination-list-item__link" href="#">03</a>
+                     </li>
+                     <li class="pagination-list-item">
+                        <a class="pagination-list-item__link" href="#">04</a>
+                     </li>
+                     <li class="pagination-list-item">
+                        <a class="pagination-list-item__link" href="#">05</a>
+                     </li>
+                  </ul>
+                  <div class="pagination__btn-box pagination__btn-box-right">
+                     <a class="pagination__btn" href="#">
+                        <svg class="pagination__btn-img" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" fill="#F5F5F5" />
+                           <path
+                              d="M29.782 20.5307L25.842 24.5307C25.692 24.6807 25.502 24.7507 25.312 24.7507C25.122 24.7507 24.932 24.6807 24.782 24.5307C24.482 24.2407 24.482 23.7707 24.772 23.4707L27.462 20.7507H10.752C10.342 20.7507 10.002 20.4107 10.002 20.0007C10.002 19.5907 10.342 19.2507 10.752 19.2507H27.462L24.772 16.5307C24.482 16.2307 24.482 15.7607 24.782 15.4707C25.072 15.1707 25.552 15.1807 25.842 15.4707L29.782 19.4707C30.072 19.7707 30.072 20.2307 29.782 20.5307Z"
+                              fill="#232324" />
+                        </svg>
+                     </a>
                   </div>
                </div>
             </div>
-         </section>
+         </div>
 
          <section class="optimal">
             <div class="container optimal__container">
@@ -933,7 +877,6 @@
             </div>
          </div>
       </footer>
-
 
 
 
