@@ -11,6 +11,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="css/swiper-bundle.min.css">
    <link rel="stylesheet" href="css/choices.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -107,7 +108,8 @@
                            </ul>
                         </div>
                         <div class="contacts__tender-box">
-                           <button class="tender__btn" data-popup="#tender" data-da=".menu__list-mobile,620,last">
+                           <a class="tender__btn" data-da=".menu__list-mobile,620,last" data-fancybox data-src="#tender"
+                              href="javascript:;">
                               Пригласить на тендер
                               <svg class="tender__btn-img" width="10" height="10" viewBox="0 0 10 10" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -115,7 +117,7 @@
                                     d="M8.11933 6.79843L8.10372 0.632108L9.97639 0.636821L10 10L0.636822 9.97639L0.6321 8.10373L6.79851 8.11925L0 1.32081L1.32081 0L8.11933 6.79843Z"
                                     fill="#F27934" />
                               </svg>
-                           </button>
+                           </a>
                         </div>
                      </div>
                      <button type="button" class="icon-menu"><span></span></button>
@@ -961,9 +963,9 @@
                                              fill="#232324" />
                                        </svg>
                                     </a>
-                                    <button class="calculate__btn" data-popup="#calculate">
+                                    <a class="calculate__btn" data-fancybox data-src="#calculate" href="javascript:;">
                                        Рассчитать свой проект
-                                    </button>
+                                    </a>
                                  </div>
                               </div>
                            </div>
@@ -1026,9 +1028,9 @@
                                              fill="#232324" />
                                        </svg>
                                     </a>
-                                    <button class="calculate__btn" data-popup="#calculate">
+                                    <a class="calculate__btn" data-fancybox data-src="#calculate" href="javascript:;">
                                        Рассчитать свой проект
-                                    </button>
+                                    </a>
                                  </div>
                               </div>
                            </div>
@@ -1091,9 +1093,9 @@
                                              fill="#232324" />
                                        </svg>
                                     </a>
-                                    <button class="calculate__btn" data-popup="#calculate">
+                                    <a class="calculate__btn" data-fancybox data-src="#calculate" href="javascript:;">
                                        Рассчитать свой проект
-                                    </button>
+                                    </a>
                                  </div>
                               </div>
                            </div>
@@ -1146,9 +1148,9 @@
                                              fill="#232324" />
                                        </svg>
                                     </a>
-                                    <button class="calculate__btn" data-popup="#calculate">
+                                    <a class="calculate__btn" data-fancybox data-src="#calculate" href="javascript:;">
                                        Рассчитать свой проект
-                                    </button>
+                                    </a>
                                  </div>
                               </div>
                            </div>
@@ -1521,7 +1523,7 @@
                            Устройство полимерных полов и поставка строительных материалов с 2001 года
                         </div>
                         <div class="footer__info-buttons">
-                           <button class="footer-tender__btn" data-popup="#tender">
+                           <a class="footer-tender__btn" data-fancybox data-src="#tender" href="javascript:;">
                               Пригласить на тендер
                               <svg class="tender__btn-img" width="10" height="10" viewBox="0 0 10 10" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -1529,10 +1531,11 @@
                                     d="M8.11933 6.79843L8.10372 0.632108L9.97639 0.636821L10 10L0.636822 9.97639L0.6321 8.10373L6.79851 8.11925L0 1.32081L1.32081 0L8.11933 6.79843Z"
                                     fill="#F27934" />
                               </svg>
-                           </button>
-                           <button class="calculate__btn footer-calculate__btn" data-popup="#calculate">
+                           </a>
+                           <a class="calculate__btn footer-calculate__btn" data-fancybox data-src="#calculate"
+                              href="javascript:;">
                               Оставить заявку на расчет
-                           </button>
+                           </a>
                         </div>
                      </div>
                   </li>
@@ -1704,219 +1707,196 @@
       </footer>
 
 
-      <div class="hystmodal" id="calculate" aria-hidden="true">
-         <div class="hystmodal__wrap">
-            <div class="hystmodal__window" role="dialog" aria-modal="true">
-               <div class="popup__body">
-                  <form class="popup__form" action="#">
-                     <div class="popup__body-wrapper">
-                        <div class="popup__body-inner">
-                           <div class="popup__content">
-                              <button data-hystclose class="hystmodal__close">Закрыть</button>
-                              <div class="popup__content-box popup__title-box">
-                                 <h5 class="popup__title">
-                                    <b>Оставьте заявку</b> на расчет стоимости работ по вашему объекту
-                                 </h5>
-                                 <p class="popup__description">
-                                    После заполнения формы мы свяжемся с Вами в рабочее время
-                                 </p>
-                              </div>
-                              <div class="popup__content-box">
-                                 <div class="popup-calculation__block">
-                                    <div class="calculation-data__item">
-                                       <div class="calculation-data__select">
-                                          <select class="multi-default">
-                                             <option class="calculation-data__option" selected>
-                                                Вид работ
-                                             </option>
-                                             <option class="calculation-data__option"
-                                                value="Устройство полимерных полов">
-                                                Устройство полимерных полов
-                                             </option>
-                                             <option class="calculation-data__option" value="Бетонные работы">
-                                                Бетонные работы
-                                             </option>
-                                             <option class="calculation-data__option" value="Полимерные покрытия">
-                                                Полимерные покрытия
-                                             </option>
-                                             <option class="calculation-data__option" value="Строительство">
-                                                Строительство
-                                             </option>
-                                             <option class="calculation-data__option" value="Специальные покрытия">
-                                                Специальные покрытия
-                                             </option>
-                                          </select>
-                                       </div>
-                                    </div>
-                                    <div class="calculation-data__item">
-                                       <div class="calculation-data__select">
-                                          <select class="multi-default">
-                                             <option class="calculation-data__option" selected>
-                                                Тип объекта
-                                             </option>
-                                             <option class="calculation-data__option" value="Стадион">
-                                                Стадион
-                                             </option>
-                                             <option class="calculation-data__option" value="Подземная парковка">
-                                                Подземная парковка
-                                             </option>
-                                             <option class="calculation-data__option" value="Торговый центр">
-                                                Торговый центр
-                                             </option>
-                                          </select>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="popup__content-box">
-                                 <div class="popup-technical-task__block">
-                                    <div class="calculation-data__item">
-                                       <div class="calculation-data__input">
-                                          <div class="field__wrapper">
-                                             <input type="file" name="file-1" id="field__file-1"
-                                                class="field field__file" multiple>
-                                             <label class="field__file-wrapper" for="field__file-1">
-                                                <span class="field__file-fake">Тех. задание если есть</span>
-                                                <span class="field__file-button">
-                                                   <img class="file-button__img" src="images/icons/calculation-icon.svg"
-                                                      alt="">
-                                                   Выбрать
-                                                </span>
-                                             </label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="popup__content-box">
-                                 <div class="popup-user__block">
-                                    <div class="user-data__item">
-                                       <div class="text-field text-field_floating">
-                                          <input class="text-field__input" type="tel" id="phone-1"
-                                             placeholder="Ваш телефон *">
-                                          <label class="text-field__label" for="phone-1">Ваш телефон <span
-                                                class="span__red">*</span>
-                                          </label>
-                                       </div>
-                                    </div>
-                                    <div class="user-data__item">
-                                       <div class="text-field text-field_floating">
-                                          <input class="text-field__input" type="email" id="email-1"
-                                             placeholder="Ваш email">
-                                          <label class="text-field__label" for="email-1">Ваш email</label>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="popup__content-box popup__btn-box">
-                                 <div class="user-data__item">
-                                    <button class="user-data__btn" type="submit">Отправить</button>
-                                 </div>
-                              </div>
-                              <div class="popup__content-box">
-                                 <div class="optimal-politics__info popup-politics__info">
-                                    Нажимая на кнопку «Отправить», вы соглашаетесь с
-                                    <a class="optimal-politics__link" href="#">
-                                       политикой конфиденциальности
-                                    </a> и подтверждаете согласие на
-                                    <a class="optimal-politics__link" href="#">
-                                       обработку персональных данных
-                                    </a>
+      <div class="popup__body" id="tender">
+         <form class="popup__form" action="#">
+            <div class="popup__body-wrapper">
+               <div class="popup__body-inner">
+                  <div class="popup__content">
+                     <div class="popup__content-box popup__title-box">
+                        <h5 class="popup__title">
+                           <b>Пришлите нам техзадание </b> для участия в тендере
+                        </h5>
+                        <p class="popup__description">
+                           После заполнения формы подготовим предложение
+                           и обсудим детали вашего объекта
+                        </p>
+                     </div>
+                     <div class="popup__content-box">
+                        <div class="popup-technical-task__block">
+                           <div class="calculation-data__item">
+                              <div class="calculation-data__input">
+                                 <div class="field__wrapper">
+                                    <input type="file" name="file-2" id="field__file-2" class="field field__file"
+                                       multiple>
+                                    <label class="field__file-wrapper" for="field__file-2">
+                                       <span class="field__file-fake">Тех. задание если есть</span>
+                                       <span class="field__file-button">
+                                          <img class="file-button__img" src="images/icons/calculation-icon.svg" alt="">
+                                          Выбрать
+                                       </span>
+                                    </label>
                                  </div>
                               </div>
                            </div>
                         </div>
                      </div>
-                  </form>
+                     <div class="popup__content-box">
+                        <div class="popup-user__block">
+                           <div class="user-data__item">
+                              <div class="text-field text-field_floating">
+                                 <input class="text-field__input" type="tel" id="phone-2" placeholder="Ваш телефон *">
+                                 <label class="text-field__label" for="phone-2">Ваш телефон <span
+                                       class="span__red">*</span>
+                                 </label>
+                              </div>
+                           </div>
+                           <div class="user-data__item">
+                              <div class="text-field text-field_floating">
+                                 <input class="text-field__input" type="email" id="email-2" placeholder="Ваш email">
+                                 <label class="text-field__label" for="email-2">Ваш email</label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="popup__content-box popup__btn-box">
+                        <div class="user-data__item">
+                           <button class="user-data__btn" type="submit">Отправить</button>
+                        </div>
+                     </div>
+                     <div class="popup__content-box">
+                        <div class="optimal-politics__info popup-politics__info">
+                           Нажимая на кнопку «Отправить», вы соглашаетесь с
+                           <a class="optimal-politics__link" href="#">
+                              политикой конфиденциальности
+                           </a> и подтверждаете согласие на
+                           <a class="optimal-politics__link" href="#">
+                              обработку персональных данных
+                           </a>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
-         </div>
+         </form>
       </div>
 
-      <div class="hystmodal" id="tender" aria-hidden="true">
-         <div class="hystmodal__wrap">
-            <div class="hystmodal__window" role="dialog" aria-modal="true">
-               <div class="popup__body">
-                  <form class="popup__form" action="#">
-                     <div class="popup__body-wrapper">
-                        <div class="popup__body-inner">
-                           <div class="popup__content">
-                              <button data-hystclose class="hystmodal__close">Закрыть</button>
-                              <div class="popup__content-box popup__title-box">
-                                 <h5 class="popup__title">
-                                    <b>Пришлите нам техзадание </b> для участия в тендере
-                                 </h5>
-                                 <p class="popup__description">
-                                    После заполнения формы подготовим предложение
-                                    и обсудим детали вашего объекта
-                                 </p>
+      <div class="popup__body" id="calculate">
+         <form class="popup__form" action="#">
+            <div class="popup__body-wrapper">
+               <div class="popup__body-inner">
+                  <div class="popup__content">
+                     <div class="popup__content-box popup__title-box">
+                        <h5 class="popup__title">
+                           <b>Оставьте заявку</b> на расчет стоимости работ по вашему объекту
+                        </h5>
+                        <p class="popup__description">
+                           После заполнения формы мы свяжемся с Вами в рабочее время
+                        </p>
+                     </div>
+                     <div class="popup__content-box">
+                        <div class="popup-calculation__block">
+                           <div class="calculation-data__item">
+                              <div class="calculation-data__select">
+                                 <select class="multi-default">
+                                    <option class="calculation-data__option" selected>
+                                       Вид работ
+                                    </option>
+                                    <option class="calculation-data__option" value="Устройство полимерных полов">
+                                       Устройство полимерных полов
+                                    </option>
+                                    <option class="calculation-data__option" value="Бетонные работы">
+                                       Бетонные работы
+                                    </option>
+                                    <option class="calculation-data__option" value="Полимерные покрытия">
+                                       Полимерные покрытия
+                                    </option>
+                                    <option class="calculation-data__option" value="Строительство">
+                                       Строительство
+                                    </option>
+                                    <option class="calculation-data__option" value="Специальные покрытия">
+                                       Специальные покрытия
+                                    </option>
+                                 </select>
                               </div>
-
-                              <div class="popup__content-box">
-                                 <div class="popup-technical-task__block">
-                                    <div class="calculation-data__item">
-                                       <div class="calculation-data__input">
-                                          <div class="field__wrapper">
-                                             <input type="file" name="file-2" id="field__file-2"
-                                                class="field field__file" multiple>
-                                             <label class="field__file-wrapper" for="field__file-2">
-                                                <span class="field__file-fake">Тех. задание если есть</span>
-                                                <span class="field__file-button">
-                                                   <img class="file-button__img" src="images/icons/calculation-icon.svg"
-                                                      alt="">
-                                                   Выбрать
-                                                </span>
-                                             </label>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
+                           </div>
+                           <div class="calculation-data__item">
+                              <div class="calculation-data__select">
+                                 <select class="multi-default">
+                                    <option class="calculation-data__option" selected>
+                                       Тип объекта
+                                    </option>
+                                    <option class="calculation-data__option" value="Стадион">
+                                       Стадион
+                                    </option>
+                                    <option class="calculation-data__option" value="Подземная парковка">
+                                       Подземная парковка
+                                    </option>
+                                    <option class="calculation-data__option" value="Торговый центр">
+                                       Торговый центр
+                                    </option>
+                                 </select>
                               </div>
-                              <div class="popup__content-box">
-                                 <div class="popup-user__block">
-                                    <div class="user-data__item">
-                                       <div class="text-field text-field_floating">
-                                          <input class="text-field__input" type="tel" id="phone-2"
-                                             placeholder="Ваш телефон *">
-                                          <label class="text-field__label" for="phone-2">Ваш телефон <span
-                                                class="span__red">*</span>
-                                          </label>
-                                       </div>
-                                    </div>
-                                    <div class="user-data__item">
-                                       <div class="text-field text-field_floating">
-                                          <input class="text-field__input" type="email" id="email-1"
-                                             placeholder="Ваш email">
-                                          <label class="text-field__label" for="email-1">Ваш email</label>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="popup__content-box popup__btn-box">
-                                 <div class="user-data__item">
-                                    <button class="user-data__btn" type="submit">Отправить</button>
-                                 </div>
-                              </div>
-                              <div class="popup__content-box">
-                                 <div class="optimal-politics__info popup-politics__info">
-                                    Нажимая на кнопку «Отправить», вы соглашаетесь с
-                                    <a class="optimal-politics__link" href="#">
-                                       политикой конфиденциальности
-                                    </a> и подтверждаете согласие на
-                                    <a class="optimal-politics__link" href="#">
-                                       обработку персональных данных
-                                    </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="popup__content-box">
+                        <div class="popup-technical-task__block">
+                           <div class="calculation-data__item">
+                              <div class="calculation-data__input">
+                                 <div class="field__wrapper">
+                                    <input type="file" name="file-1" id="field__file-1" class="field field__file"
+                                       multiple>
+                                    <label class="field__file-wrapper" for="field__file-1">
+                                       <span class="field__file-fake">Тех. задание если есть</span>
+                                       <span class="field__file-button">
+                                          <img class="file-button__img" src="images/icons/calculation-icon.svg" alt="">
+                                          Выбрать
+                                       </span>
+                                    </label>
                                  </div>
                               </div>
                            </div>
                         </div>
                      </div>
-                  </form>
+                     <div class="popup__content-box">
+                        <div class="popup-user__block">
+                           <div class="user-data__item">
+                              <div class="text-field text-field_floating">
+                                 <input class="text-field__input" type="tel" id="phone-1" placeholder="Ваш телефон *">
+                                 <label class="text-field__label" for="phone-1">Ваш телефон <span
+                                       class="span__red">*</span>
+                                 </label>
+                              </div>
+                           </div>
+                           <div class="user-data__item">
+                              <div class="text-field text-field_floating">
+                                 <input class="text-field__input" type="email" id="email-1" placeholder="Ваш email">
+                                 <label class="text-field__label" for="email-1">Ваш email</label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="popup__content-box popup__btn-box">
+                        <div class="user-data__item">
+                           <button class="user-data__btn" type="submit">Отправить</button>
+                        </div>
+                     </div>
+                     <div class="popup__content-box">
+                        <div class="optimal-politics__info popup-politics__info">
+                           Нажимая на кнопку «Отправить», вы соглашаетесь с
+                           <a class="optimal-politics__link" href="#">
+                              политикой конфиденциальности
+                           </a> и подтверждаете согласие на
+                           <a class="optimal-politics__link" href="#">
+                              обработку персональных данных
+                           </a>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
-         </div>
+         </form>
       </div>
-
 
 
    </div>
@@ -1929,7 +1909,7 @@
 
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-   <script src="js/hystmodal.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
    <script src="js/swiper-bundle.min.js"></script>
    <script src="js/choices.min.js"></script>
    <script src="js/mixitup.min.js"></script>

@@ -11,6 +11,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="css/swiper-bundle.min.css">
    <link rel="stylesheet" href="css/choices.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -350,9 +351,9 @@
                            </ul>
                         </div>
                         <div class="content__item-box">
-                           <button type="button" class="details__btn" data-popup="#requisites">
+                           <a class="details__btn" data-fancybox data-src="#requisites" href="javascript:;">
                               Запросить реквизиты
-                           </button>
+                           </a>
                         </div>
                      </div>
                   </div>
@@ -677,66 +678,59 @@
          </div>
       </footer>
 
-      <div class="hystmodal" id="requisites" aria-hidden="true">
-         <div class="hystmodal__wrap">
-            <div class="hystmodal__window" role="dialog" aria-modal="true">
-               <div class="popup__body">
-                  <form class="popup__form" action="#">
-                     <div class="popup__body-wrapper">
-                        <div class="popup__body-inner">
-                           <div class="popup__content">
-                              <button data-hystclose class="hystmodal__close">Закрыть</button>
-                              <div class="popup__content-box popup__title-box">
-                                 <h5 class="popup__title">
-                                    <b>Вышлем реквизиты на почту</b>
-                                 </h5>
-                                 <p class="popup__description">
-                                    Заполните форму и получите реквизиты через 1 минуту
-                                 </p>
+
+
+      <div class="popup__body" id="requisites">
+         <form class="popup__form" action="#">
+            <div class="popup__body-wrapper">
+               <div class="popup__body-inner">
+                  <div class="popup__content">
+                     <div class="popup__content-box popup__title-box">
+                        <h5 class="popup__title">
+                           <b>Вышлем реквизиты на почту</b>
+                        </h5>
+                        <p class="popup__description">
+                           Заполните форму и получите реквизиты через 1 минуту
+                        </p>
+                     </div>
+                     <div class="popup__content-box">
+                        <div class="popup-user__block">
+                           <div class="user-data__item">
+                              <div class="text-field text-field_floating">
+                                 <input class="text-field__input" type="tel" id="phone-4" placeholder="Ваш телефон *">
+                                 <label class="text-field__label" for="phone-4">Ваш телефон <span
+                                       class="span__red">*</span>
+                                 </label>
                               </div>
-                              <div class="popup__content-box">
-                                 <div class="popup-user__block">
-                                    <div class="user-data__item">
-                                       <div class="text-field text-field_floating">
-                                          <input class="text-field__input" type="tel" id="phone-4"
-                                             placeholder="Ваш телефон *">
-                                          <label class="text-field__label" for="phone-4">Ваш телефон <span
-                                                class="span__red">*</span>
-                                          </label>
-                                       </div>
-                                    </div>
-                                    <div class="user-data__item">
-                                       <div class="text-field text-field_floating">
-                                          <input class="text-field__input" type="email" id="email-4"
-                                             placeholder="Ваш email">
-                                          <label class="text-field__label" for="email-4">Ваш email</label>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="popup__content-box popup__btn-box">
-                                 <div class="user-data__item">
-                                    <button class="user-data__btn" type="submit">Отправить</button>
-                                 </div>
-                              </div>
-                              <div class="popup__content-box">
-                                 <div class="optimal-politics__info popup-politics__info">
-                                    Нажимая на кнопку «Отправить», вы соглашаетесь с
-                                    <a class="optimal-politics__link" href="#">
-                                       политикой конфиденциальности
-                                    </a> и подтверждаете согласие на
-                                    <a class="optimal-politics__link" href="#">
-                                       обработку персональных данных
-                                    </a>
-                                 </div>
+                           </div>
+                           <div class="user-data__item">
+                              <div class="text-field text-field_floating">
+                                 <input class="text-field__input" type="email" id="email-4" placeholder="Ваш email">
+                                 <label class="text-field__label" for="email-4">Ваш email</label>
                               </div>
                            </div>
                         </div>
                      </div>
-                  </form>
+                     <div class="popup__content-box popup__btn-box">
+                        <div class="user-data__item">
+                           <button class="user-data__btn" type="submit">Отправить</button>
+                        </div>
+                     </div>
+                     <div class="popup__content-box">
+                        <div class="optimal-politics__info popup-politics__info">
+                           Нажимая на кнопку «Отправить», вы соглашаетесь с
+                           <a class="optimal-politics__link" href="#">
+                              политикой конфиденциальности
+                           </a> и подтверждаете согласие на
+                           <a class="optimal-politics__link" href="#">
+                              обработку персональных данных
+                           </a>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
-         </div>
+         </form>
       </div>
 
 
@@ -750,7 +744,7 @@
 
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-   <script src="js/hystmodal.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
    <script src="js/swiper-bundle.min.js"></script>
    <script src="js/choices.min.js"></script>
    <script src="js/mixitup.min.js"></script>
